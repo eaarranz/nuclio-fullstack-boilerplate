@@ -13,7 +13,7 @@ const PinCard = ({description, image_url, name }) => {
         >
             <div className={styles.__image__container}>
                 <img src={image_url} className={styles.__image} alt="pinImage"/>
-                {true && <PinCardActionsView />}
+                {isHovered && <PinCardActionsView />}
             </div>
             <span className={styles.__pinName}>{name}</span>
             <span className={styles.__pinDescription}>{description}</span>
